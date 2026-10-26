@@ -1,8 +1,8 @@
 const DEFAULT_PAGE = home
 
 function show() {
-  const ele = document.getElementById(location.hash.slice(1));
-  if (!ele) {
+  const element = document.getElementById(location.hash.slice(1));
+  if (!element) {
     alert("no such element");
     return;
   }
@@ -12,7 +12,8 @@ function show() {
     pages[i].style.display = 'none';
   }
 
-  ele.style.display = 'block';
+  element.style.display = 'block';
 }
 
 window.onhashchange = show;
+window.onload = show;
