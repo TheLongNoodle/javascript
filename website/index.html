@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/home.css" />
         <link rel="stylesheet" href="css/cards.css" />
+        <link rel="stylesheet" href="css/algorithms.css" />
     </head>
     <body>
         <!-- navigation -->
@@ -44,9 +45,28 @@
             </div>
             <ul id="cards-list" class="cards-list"></ul>
         </section>
+        <!-- algorithms -->
+        <section id="algorithms" class="page" style="display: none">
+            <div class="algo">
+                <h1>Algorithms</h1>
+                <div class="algo-input">
+                    <select id="algorithm">
+                        <option value="select">--- Select ---</option>
+                        <option value="Palindrome">Palindrome</option>
+                        <option value="Prime">Prime</option>
+                        <option value="Password">Password</option>
+                        <option value="Unique">Unique</option>
+                    </select>
+                    <input type="text" id="number-input" placeholder="Input" />
+
+                    <p id="output">Select algorithm</p>
+                </div>
+            </div>
+        </section>
         <!-- scripts -->
         <script type="module" src="js/main.js"></script>
         <script type="module" src="js/home.js"></script>
         <script type="module" src="js/cards.js"></script>
+        <script type="module" src="js/algorithms.js"></script>
     </body>
 </html>
