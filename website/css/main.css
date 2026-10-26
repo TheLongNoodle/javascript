@@ -12,6 +12,15 @@ body {
     line-height: 1.5;
 }
 
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
 .top-nav {
     display: flex;
     flex-wrap: wrap;
