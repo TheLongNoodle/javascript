@@ -25,6 +25,7 @@ function addCard() {
         nameInput.value = "";
         emailInput.value = "";
         updateList();
+        writeToFile();
     }
 }
 
@@ -33,6 +34,7 @@ function removeCard(event) {
         const index = event.target.dataset.index;
         cards.splice(index, 1);
         updateList();
+        writeToFile();
     }
 }
 
@@ -48,5 +50,15 @@ function updateList() {
         .join("");
 }
 
+function writeToFile() {
+    localStorage.setItem("cards", JSON.stringify(cards));
+}
+
+function readFromFile() {
+    cards = JSON.parse(localStorage.cards);
+    updateList();
+}
+
 submitBtn.addEventListener("click", addCard);
 list.addEventListener("click", removeCard);
+document.addEventListener("DOMContentLoaded", readFromFile());

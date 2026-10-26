@@ -1,9 +1,7 @@
-const DEFAULT_PAGE = home
-
 function show() {
   const element = document.getElementById(location.hash.slice(1));
   if (!element) {
-    alert("no such element");
+    element = "home"
     return;
   }
 
