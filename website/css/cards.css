@@ -8,7 +8,7 @@
 }
 
 .card-form input,
-button {
+.card-form button {
     box-sizing: border-box;
     width: 30%;
     border-color: rgba(128, 128, 128, 0.404);

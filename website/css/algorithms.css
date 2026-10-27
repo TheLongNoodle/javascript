@@ -15,7 +15,9 @@
 }
 
 .algo input,
-p, select, option {
+.algo p,
+.algo select,
+.algo option {
     border-style: solid;
     box-sizing: border-box;
     width: 30%;
@@ -28,4 +30,46 @@ p, select, option {
     text-align: left;
     color: black;
     background-color: white;
+}
+
+#algorithms .encrypt {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#algorithms .encrypt-input {
+    display: flex;
+    justify-content: center;
+    flex-direction: Row;
+    align-items: center;
+}
+
+.encrypt input,
+.encrypt button,
+.encrypt p,
+.encrypt select,
+.encrypt option {
+    border-style: solid;
+    box-sizing: border-box;
+    width: 30%;
+    border-color: rgba(128, 128, 128, 0.404);
+    border-radius: 10px;
+    padding: 12px 24px;
+    line-height: 1.5;
+    margin: 8px;
+    font-size: small;
+    text-align: left;
+    color: black;
+    background-color: white;
+}
+
+.encrypt-input button {
+    background-color: #2852c5;
+    color: white;
+    text-align: center;
+    font-size: medium;
 }
