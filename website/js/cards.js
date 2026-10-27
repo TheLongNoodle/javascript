@@ -42,8 +42,8 @@ function updateList() {
     list.innerHTML = cards
         .map(
             (item, index) => `<li class="card">
-    <p>Name: ${item[0]}<br /></p>
-    <p>Email: ${item[1]}<br /></p>
+    <p class="user-info">Name: ${item[0]}<br /></p>
+    <p class="user-info">Email: ${item[1]}<br /></p>
     <button id="delete-user" class="delete-user" type="button" data-index="${index}">DELETE</button>
     </li>`
         )

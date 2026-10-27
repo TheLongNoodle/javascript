@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/home.css" />
         <link rel="stylesheet" href="css/cards.css" />
+        <link rel="stylesheet" href="css/filters.css" />
         <link rel="stylesheet" href="css/algorithms.css" />
     </head>
     <body>
@@ -71,10 +72,32 @@
                 </div>
             </div>
         </section>
+        <!-- filters -->
+        <section id="filters" class="page" style="display: none">
+            <div class="filter-page">
+                <h1>Filter Cards</h1>
+                <div class="filter-bar">
+                    <select id="filter-select">
+                        <option value="age">Age</option>
+                        <option value="name">Name</option>
+                        <option value="admin">Admin</option>
+                        <option value="grades">Grades</option>
+                        <option value="address">Address</option>
+                    </select>
+                    <input type="text" id="filter-search-input" placeholder="Search..." />
+                    <button id="find-button">Find</button>
+                    <button id="reset-button">Reset</button>
+                    <button id="sort-button">Sort</button>
+                    <button id="reverse-button">Reverse</button>
+                </div>
+            </div>
+            <ul id="students-list" class="students-list"></ul>
+        </section>
         <!-- scripts -->
         <script type="module" src="js/main.js"></script>
         <script type="module" src="js/home.js"></script>
         <script type="module" src="js/cards.js"></script>
+        <script type="module" src="js/filters.js"></script>
         <script type="module" src="js/algorithms.js"></script>
     </body>
 </html>

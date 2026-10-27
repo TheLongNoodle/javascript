@@ -21,11 +21,15 @@
 }
 
 .curr-time {
+    border-color: transparent;
+    background-color: transparent;
     font-size: 50px;
     margin: 0;
 }
 
 .curr-date {
+    border-color: transparent;
+    background-color: transparent;
     font-size: 20px;
     margin: 0;
 }
