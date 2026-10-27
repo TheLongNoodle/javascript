@@ -1,5 +1,5 @@
 function show() {
-  const element = document.getElementById(location.hash.slice(1));
+  let element = document.getElementById(location.hash.slice(1));
   if (!element) {
     element = "home"
     return;
